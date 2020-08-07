@@ -35,3 +35,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.v-snack__wrapper {
+  min-width: 0 !important;
+}
+</style>

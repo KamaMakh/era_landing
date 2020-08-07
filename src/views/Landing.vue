@@ -122,9 +122,9 @@
             </v-img>
           </div>
           <div class="mobile-wrap__text-block">
-            <div class="mobile-wrap__title">
-              Мобильные приложения iOS и Android
-            </div>
+            <h1 class="mobile-wrap__title">
+              Разработка мобильных приложений iOS и Android
+            </h1>
             <div class="mobile-wrap__text">
               Создаём iOS / Android мобильные приложения на заказ для
               существующих бизнесов и для стартапов. Полный цикл разработки
@@ -145,7 +145,7 @@
               ERA Development
             </div>
             <div class="contacts-wrap__text">
-              Наша компания создаёт мобильные приложения которые работают и
+              Наша компания создаёт мобильные приложения, которые работают и
               приносят прибыль. Большой опыт коммерческой разработки позволяет
               гарантировать нужный клиенту результат: запуск вашего проекта
               точно в срок с требуемым качеством и гарантией 12 месяцев.
@@ -153,10 +153,10 @@
             </div>
             <div class="contacts-wrap__form">
               <v-form ref="callMe" v-model="callMeValid">
-                <v-row v-if="!callMeSuccess" class="align-center">
+                <v-row class="align-center">
                   <v-col cols="12" md="8" class="contacts-wrap__input">
                     <v-text-field
-                      v-model="form.phone"
+                      v-model="form.phone1"
                       light
                       :rules="[rules.required]"
                       rounded
@@ -176,11 +176,6 @@
                     </v-btn>
                   </v-col>
                 </v-row>
-                <v-row v-else>
-                  <v-col>
-                    Спасибо за обращение, мы свяжемся с Вами в ближайшее время.
-                  </v-col>
-                </v-row>
               </v-form>
             </div>
           </div>
@@ -190,13 +185,14 @@
     <section id="adv">
       <div class="adv-wrap">
         <div class="adv-wrap__inner">
-          <div class="adv-wrap__title">
+          <h2 class="adv-wrap__title">
             Преимущества
-          </div>
+          </h2>
           <div class="adv-wrap__sub-title">
-            С 2015 года разрабатываем мобильные приложения. Мы знаем как сделать
-            Ваше приложение популярным. В нашей команде 14
-            высококвалифицированных специалистов и мы сделали уже 79 приложений.
+            С 2015 года разрабатываем мобильные приложения. Мы знаем, как
+            сделать Ваше приложение популярным. В нашей команде 14
+            высококвалифицированных специалистов, и мы сделали уже 29
+            приложений.
           </div>
           <div v-if="windowWidth > 600" class="adv-wrap__blocks blocks">
             <v-row class="justify-space-between mx-0">
@@ -381,15 +377,15 @@
             </v-img>
           </div>
           <div class="why-wrap__text-block">
-            <div class="why-wrap__title">
+            <h2 class="why-wrap__title">
               Почему нужно заказывать разработку именно у нас?
-            </div>
+            </h2>
             <div class="why-wrap__text">
               Мы можем предложить приятные цены на разработку за счёт налаженных
-              процессов разработки мобильных приложений. Так же на каждый проект
+              процессов разработки мобильных приложений. Также на каждый проект
               назначается Руководитель проекта, который ведёт проект с самого
               начала до публикации в App Store и Google Play. Каждую неделю мы
-              публикуем демонстрационные версии мобильных приложений. Чтобы вы
+              публикуем демонстрационные версии мобильных приложений, чтобы вы
               могли скачать приложение, посмотреть его работу и дать обратную
               связь при необходимости.
               <v-row
@@ -445,12 +441,12 @@
     <section id="portfolio">
       <div class="portfolio-wrap">
         <div class="portfolio-wrap__inner">
-          <div class="portfolio-wrap__title">
+          <h2 class="portfolio-wrap__title">
             Портфолио
-          </div>
+          </h2>
           <div class="portfolio-wrap__sub-title">
             На данный момент созданы и опубликованы более 20 проектов. <br />
-            Познакомтесь с некоторыми из них
+            Познакомьтесь с некоторыми из них
           </div>
           <div v-if="windowWidth > 600" class="portfolio-wrap__blocks blocks">
             <v-row class="justify-space-between mx-0">
@@ -532,9 +528,9 @@
     <section id="reviews">
       <div class="reviews-wrap">
         <div class="reviews-wrap__inner">
-          <div class="reviews-wrap__title">
+          <h2 class="reviews-wrap__title">
             Отзывы Клиентов
-          </div>
+          </h2>
           <div class="reviews-wrap__sub-title">
             В течение последних 4-х лет наша команда реализовала более 20
             проектов. <br />
@@ -546,11 +542,11 @@
                 <div class="blocks__top">
                   <div class="blocks__top-icon">
                     <v-img
-                      src="../assets/free-landing/oleh.png"
-                      contain
+                      src="../assets/free-landing/denis.jpg"
                       width="80"
                       height="80"
                       light
+                      class="rounded-circle"
                     >
                       <template v-slot:placeholder>
                         <v-row
@@ -568,29 +564,30 @@
                   </div>
                   <div class="blocks__top-right">
                     <div class="blocks__top-name">
-                      Парень
+                      Архипов Денис
                     </div>
                     <div class="blocks__top-desc">
-                      В очках и капюшоне
+                      ООО "Логит"
                     </div>
                   </div>
                 </div>
                 <div class="blocks__text">
-                  От лица ОАО «Курорты Северного Кавказа» выражаю благодарность
-                  ООО «ЕРА девелопмент» за индивидуальный подход к клиентам,
-                  готовность искать и находить оптимальные, качественные и в то
-                  же время нестандартные решения.
+                  Работаем с парнями над большим логистическим проектом.
+                  Нравится их подход - всегда четко и по делу. Грамотное и
+                  полное ТЗ. Идём без опозданий по графику. Получаю от них много
+                  советов по проекту. В целом сотрудничеством доволен.
+                  Рекомендую.
                 </div>
               </div>
               <div class="blocks__item">
                 <div class="blocks__top">
                   <div class="blocks__top-icon">
                     <v-img
-                      src="../assets/free-landing/oleh.png"
-                      contain
+                      src="../assets/free-landing/julia.jpg"
                       width="80"
                       height="80"
                       light
+                      class="rounded-circle"
                     >
                       <template v-slot:placeholder>
                         <v-row
@@ -608,29 +605,31 @@
                   </div>
                   <div class="blocks__top-right">
                     <div class="blocks__top-name">
-                      Парень
+                      Юлия Доманова
                     </div>
                     <div class="blocks__top-desc">
-                      В очках и капюшоне
+                      "Доктор Мама"
                     </div>
                   </div>
                 </div>
                 <div class="blocks__text">
-                  От лица ОАО «Курорты Северного Кавказа» выражаю благодарность
-                  ООО «ЕРА девелопмент» за индивидуальный подход к клиентам,
-                  готовность искать и находить оптимальные, качественные и в то
-                  же время нестандартные решения.
+                  Компания ERA создавала мобильное приложение для трекинга сна
+                  деткам. Получили приложение вовремя. Помогли выложить в гугл
+                  плей и эпстор. Спасибо, вам ребята, очень понравилось
+                  работать. Мы сейчас на гарантийном обслуживании, после думаем
+                  продолжить работу с компанией.
                 </div>
               </div>
               <div class="blocks__item">
                 <div class="blocks__top">
                   <div class="blocks__top-icon">
                     <v-img
-                      src="../assets/free-landing/oleh.png"
+                      src="../assets/free-landing/ilya.jpg"
                       contain
                       width="80"
                       height="80"
                       light
+                      class="rounded-circle"
                     >
                       <template v-slot:placeholder>
                         <v-row
@@ -648,58 +647,15 @@
                   </div>
                   <div class="blocks__top-right">
                     <div class="blocks__top-name">
-                      Парень
+                      Илья Опелович
                     </div>
-                    <div class="blocks__top-desc">
-                      В очках и капюшоне
-                    </div>
+                    <div class="blocks__top-desc"></div>
                   </div>
                 </div>
                 <div class="blocks__text">
-                  От лица ОАО «Курорты Северного Кавказа» выражаю благодарность
-                  ООО «ЕРА девелопмент» за индивидуальный подход к клиентам,
-                  готовность искать и находить оптимальные, качественные и в то
-                  же время нестандартные решения.
-                </div>
-              </div>
-              <div class="blocks__item">
-                <div class="blocks__top">
-                  <div class="blocks__top-icon">
-                    <v-img
-                      src="../assets/free-landing/oleh.png"
-                      contain
-                      width="80"
-                      height="80"
-                      light
-                    >
-                      <template v-slot:placeholder>
-                        <v-row
-                          class="fill-height ma-0"
-                          align="center"
-                          justify="center"
-                        >
-                          <v-progress-circular
-                            indeterminate
-                            color="grey lighten-5"
-                          ></v-progress-circular>
-                        </v-row>
-                      </template>
-                    </v-img>
-                  </div>
-                  <div class="blocks__top-right">
-                    <div class="blocks__top-name">
-                      Парень
-                    </div>
-                    <div class="blocks__top-desc">
-                      В очках и капюшоне
-                    </div>
-                  </div>
-                </div>
-                <div class="blocks__text">
-                  От лица ОАО «Курорты Северного Кавказа» выражаю благодарность
-                  ООО «ЕРА девелопмент» за индивидуальный подход к клиентам,
-                  готовность искать и находить оптимальные, качественные и в то
-                  же время нестандартные решения.
+                  Делали 2 проекта для Казахстана. Оба работают, всё в порядке.
+                  Скоро начнём делать еще один. Компанию советую к
+                  сотрудничеству.
                 </div>
               </div>
             </slick-carousel>
@@ -711,9 +667,9 @@
       <div class="question-wrap">
         <div class="question-wrap__inner">
           <div class="question-wrap__text">
-            <div class="question-wrap__title">
+            <h2 class="question-wrap__title">
               Часто задаваемые вопросы
-            </div>
+            </h2>
             <div class="question-wrap__panels">
               <v-expansion-panels>
                 <v-expansion-panel>
@@ -723,11 +679,11 @@
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
                     - Простые мобильные приложения стоят от 500.000 рублей. К
-                    примеру каталог услуг, или приложение для фотофиксации. Если
-                    добавить клиент-серверную архитектуру, то сумма может
+                    примеру, каталог услуг, или приложение для фотофиксации.
+                    Если добавить клиент-серверную архитектуру, то сумма может
                     вырасти до 1.000.000 рублей. Большие и крупные проекты,
-                    например системы онлайн кредитования или маркертпейс товаров
-                    и услуг могут стоить значительно дороже.
+                    например, системы онлайн кредитования или маркертпейс
+                    товаров и услуг могут стоить значительно дороже.
                   </v-expansion-panel-content>
                 </v-expansion-panel>
                 <v-expansion-panel>
@@ -748,11 +704,11 @@
                     Что с гарантией?
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
-                    - Все наши продукты получают 12 месячную безусловную
+                    - Все наши продукты получают 12-месячную безусловную
                     гарантию на функциональность кода. Это значит, что если в
-                    течении года пользования после сдачи работ выявится
-                    неисправность - мы устраним её в течении 10 дней. А если
-                    неисправность критическая, то в течении 2-х дней.
+                    течение года пользования после сдачи работ выявится
+                    неисправность, мы устраним её в течение 10-ти дней. А если
+                    неисправность критическая - то в течение 2-х дней.
                   </v-expansion-panel-content>
                 </v-expansion-panel>
                 <v-expansion-panel>
@@ -764,21 +720,19 @@
                     постоянно улучшать, идти в ногу с тенденциями рынка. Мы с
                     удовольствием поможем вам в этом. Наша компания осуществляет
                     техническую и маркетинговую поддержку мобильных приложений
-                    для бизнеса. Вы всегда сможете заказть у нас дополнительный
+                    для бизнеса. Вы всегда сможете заказать у нас дополнительный
                     функционал или обновление дизайна.
                   </v-expansion-panel-content>
                 </v-expansion-panel>
                 <v-expansion-panel>
                   <v-expansion-panel-header>
-                    Я не знаю с чего начать разработку
+                    Я не знаю, с чего начать разработку
                   </v-expansion-panel-header>
                   <v-expansion-panel-content>
-                    - Не волнуйтесь. У нас более 20 готовых, успешных проектов.
-                    Наши сотрудники с радостью помогут Вам и проведут весь цикл
-                    разработки - от идеи до публикации в сторах. А если Вам
-                    необходима более глубокая помощь, вы всегда можете заказать
-                    у нас услугу консалтинга относительно мобильных каналов
-                    продаж.
+                    - Мы советуем сконцентрироваться на одной, самой главной,
+                    функции, реализовать сначала её, и уже позже, получив
+                    обратную связь от клиентов, постепенно усовершенствовать
+                    мобильное приложение, добавляя в него новый функционал.
                   </v-expansion-panel-content>
                 </v-expansion-panel>
               </v-expansion-panels>
@@ -810,16 +764,16 @@
     <section id="feedback">
       <div class="feedback-wrap">
         <div class="feedback-wrap__inner">
-          <div class="feedback-wrap__title">
+          <h2 class="feedback-wrap__title">
             Контакты
-          </div>
+          </h2>
           <div class="feedback-wrap__sub-title">
             Мы всегда рады, когда клиенты нам звонят. Звоните нам по телефону,
-            Whats App и Skype. Если Вы не дозвонились, оставьте свои контакты и
+            Whats App и Skype. Если Вы не дозвонились, оставьте свои контакты, и
             мы Вам перезвоним.
           </div>
           <v-row class="mx-0 feedback-wrap__inner-row">
-            <div v-if="!feedbackSuccess" class="feedback-wrap__form">
+            <div class="feedback-wrap__form">
               <v-form ref="feedback" v-model="feedbackValid">
                 <v-text-field
                   v-model="form.name"
@@ -866,9 +820,6 @@
                   Отправить
                 </v-btn>
               </v-form>
-            </div>
-            <div v-else class="feedback-wrap__success">
-              Спасибо за обращение, мы свяжемся с Вами в ближайшее время.
             </div>
 
             <div v-if="windowWidth > 760" class="feedback-wrap__contacts">
@@ -975,12 +926,28 @@
         </v-col>
       </v-footer>
     </v-card>
+    <v-bottom-sheet v-model="sheet" hide-overlay>
+      <v-sheet class="text-center" height="80px" color="success">
+        <v-alert
+          prominent
+          type="success"
+          class="my-0 mx-auto d-flex align-center justify-center"
+        >
+          <v-row align="center">
+            <v-col class="grow">
+              Спасибо за обращение, мы свяжемся с Вами в ближайшее время.
+            </v-col>
+          </v-row>
+        </v-alert>
+      </v-sheet>
+    </v-bottom-sheet>
   </div>
 </template>
 
 <script>
 import { Slide as sl } from "vue-burger-menu";
 import { required, isEmail } from "../shared/validator";
+import { mapState } from "vuex";
 
 export default {
   name: "FreeLanding",
@@ -992,6 +959,7 @@ export default {
       form: {},
       feedbackValid: false,
       callMeValid: false,
+      sheet: false,
       loading: false,
       feedbackSuccess: false,
       callMeSuccess: false,
@@ -1018,20 +986,29 @@ export default {
 
       let formData = new FormData();
       formData.append("name", this.form.name ? this.form.name : "Без имени");
-      formData.append("phone", this.form.phone);
+      formData.append("phone", onlyPhone ? this.form.phone1 : this.form.phone);
       if (this.form.email) formData.append("email", this.form.email);
       if (this.form.comment) formData.append("comment", this.form.comment);
       this.$store
         .dispatch("feedback", formData)
         .then(() => {
-          if (onlyPhone) {
-            this.callMeSuccess = true;
+          if (this.windowWidth > 960) {
+            this.sheet = true;
+            setTimeout(() => {
+              this.sheet = false;
+              this.form = {};
+              this.$refs.feedback.resetValidation();
+              this.$refs.call1Me.resetValidation();
+            }, 2000);
           } else {
-            this.feedbackSuccess = true;
+            this.snackBar.value = true;
+            this.snackBar.text =
+              "Спасибо за обращение, мы свяжемся с Вами в ближайшее время.";
+            this.snackBar.color = "success";
+            this.form = {};
+            this.$refs.feedback.resetValidation();
+            this.$refs.callMe.resetValidation();
           }
-          this.form = {};
-          this.callMeValid = true;
-          this.feedbackValid = true;
         })
         .catch(() => {
           this.snackBar.value = true;
@@ -1044,12 +1021,15 @@ export default {
     }
   },
   computed: {
+    ...mapState({
+      snackBar: state => state.snackBar
+    }),
     settings() {
       return {
         arrows: false,
         dots: true,
         infinite: true,
-        autoplay: false,
+        autoplay: true,
         slidesToShow:
           this.windowWidth < 640 ? 1 : this.windowWidth < 960 ? 2 : 3
       };

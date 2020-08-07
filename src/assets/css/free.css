@@ -156,6 +156,7 @@
   .free-landing .mobile-wrap__text-block {
     order: -1;
     padding-top: 0;
+    padding-left: 0;
   }
 }
 .free-landing .mobile-wrap__title {
@@ -332,10 +333,16 @@
     font-size: 25px;
   }
 }
+@media all and (max-width: 500px) {
+  .free-landing .contacts-wrap__form .v-text-field {
+    font-size: 20px;
+  }
+}
 .free-landing .contacts-wrap__form .v-text-field fieldset {
   border: 1px solid #ECECEC !important;
 }
 .free-landing .contacts-wrap .v-input input {
+  max-height: none;
   overflow: visible;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -804,17 +811,19 @@
     max-width: 100%;
   }
 }
+@media all and (max-width: 500px) {
+  .free-landing .feedback-wrap__form {
+    margin-top: 25px;
+  }
+}
 .free-landing .feedback-wrap__form .v-btn {
   width: 200px;
   height: 40px;
   background: linear-gradient(250deg, #6ACBE0 0%, #6859EA 100%) 0% 0% no-repeat padding-box;
-  margin-top: 6px;
+  margin-top: 25px;
 }
 .free-landing .feedback-wrap .v-text-field fieldset {
   border: 1px solid #ECECEC !important;
-}
-.free-landing .feedback-wrap .v-text-field {
-  margin-bottom: 20px;
 }
 .free-landing .feedback-wrap .v-text-field:last-child {
   margin-bottom: 0;
