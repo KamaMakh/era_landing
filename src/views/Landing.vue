@@ -849,6 +849,9 @@
                     <a href="mailto:info@eradevelopment.org">
                       info@eradevelopment.org
                     </a>
+                    <a href="mailto:darombeer@gmail.com">
+                      darombeer@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>
@@ -857,7 +860,23 @@
                   Адрес
                 </div>
                 <div class="feedback-wrap__contact-text">
-                  <div>Россия, Новосибирск, ул. Николаева, 12</div>
+                  <div>630055, г. Новосибирск, ул. Гнесиных д. 10 оф. 16</div>
+                </div>
+              </div>
+              <div class="feedback-wrap__contact">
+                <div class="feedback-wrap__contact-title pl-0">
+                  Информация о кокмпании
+                </div>
+                <div class="feedback-wrap__contact-text">
+                  <div>
+                    ООО "ЕРА"
+                  </div>
+                  <div>
+                    ИНН/КПП: 5408022063/540801001
+                  </div>
+                  <div>
+                    ОГРН: 1185476094220
+                  </div>
                 </div>
               </div>
               <!--              <div class="feedback-wrap__contact">-->
@@ -900,6 +919,9 @@
                         <a href="mailto:info@eradevelopment.org">
                           info@eradevelopment.org
                         </a>
+                        <a href="mailto:darombeer@gmail.com">
+                          darombeer@gmail.com
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -909,6 +931,22 @@
                     </div>
                     <div class="feedback-wrap__contact-text">
                       <div>Россия, Новосибирск, ул. Николаева, 12</div>
+                    </div>
+                  </div>
+                  <div class="feedback-wrap__contact">
+                    <div class="feedback-wrap__contact-title pl-0">
+                      Информация о кокмпании
+                    </div>
+                    <div class="feedback-wrap__contact-text">
+                      <div>
+                        ООО "ЕРА"
+                      </div>
+                      <div>
+                        ИНН/КПП: 5408022063/540801001
+                      </div>
+                      <div>
+                        ОГРН: 1185476094220
+                      </div>
                     </div>
                   </div>
                 </v-card-text>
